@@ -1,0 +1,34 @@
+{
+  "name": "seedshare-garden-team",
+  "version": "1.0.0",
+  "description": "BDF Group Assignment – SeedShare Garden Plot Management System",
+  "main": "index.js",
+ 
+"scripts": {
+  "start": "node src/app.js",
+  "dev": "nodemon src/app.js",
+  "db:init": "node src/config/initDatabase.js"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshithapandillap-hash/SeedShare-Garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rakshithapandillap-hash/SeedShare-Garden/issues"
+  },
+  "homepage": "https://github.com/rakshithapandillap-hash/SeedShare-Garden#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
