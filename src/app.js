@@ -1,4 +1,3 @@
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -8,6 +7,7 @@ require("./config/database");
 
 // Import routes
 const gardenersRoutes = require("./routes/gardenersRoutes");
+const leasesRoutes = require("./routes/leasesRoutes");
 
 const app = express();
 
@@ -33,6 +33,7 @@ app.get("/api/health", (req, res) => {
 
 // Gardeners endpoints
 app.use("/gardeners", gardenersRoutes);
+app.use("/leases", leasesRoutes);
 
 // Start server
 const PORT = process.env.PORT || 3000;
