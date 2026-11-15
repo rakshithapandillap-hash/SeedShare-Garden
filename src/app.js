@@ -8,6 +8,7 @@ require("./config/database");
 // Import routes
 const gardenersRoutes = require("./routes/gardenersRoutes");
 const leasesRoutes = require("./routes/leasesRoutes");
+const availabilityRoutes = require("./routes/availabilityRoutes");
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.get("/api/health", (req, res) => {
 // Gardeners endpoints
 app.use("/gardeners", gardenersRoutes);
 app.use("/leases", leasesRoutes);
+app.use("/plots/available", availabilityRoutes);
 
 // Start server
 const PORT = process.env.PORT || 3000;
